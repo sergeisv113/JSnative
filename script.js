@@ -37,12 +37,12 @@ const copyUser = {...user}
 console.log(copyUser === user)//false*/
 
 //object.assign(), JSON=>stringify
-const users = [
+/*const users = [
     {name: 'Alex'},// add obj {name: 'Katy'}
     {name: 'Bob'},// if {name: 'Heliga'} => copyBob=>change name=>Heliga
     {name: 'Anna'},
     {name: 'MAry'},
-]
+]*/
 // const copyUsers = [...users, {name: 'Katy'}]// copy link
 /*
 copyUsers = [
@@ -59,18 +59,24 @@ copyUsers = [
     }
     return user
 })*/
-let copyUsers = [
+/*let copyUsers = [
     {name: 'Alex', },
     {name: 'Bob', friends: ['Bob', 'Bob']},
     {name: 'Anna', friends: ['Anna','Anna']},
     {name: 'MAry', friends: ['Bob', 'Bob']},
     {name: 'Katy', friends: ['Anna','Anna']}
-]
+]*/
 // const copyUsers = users.map(user => user)//poverhnosn copy
 // const copyUsers = [...users]
 
-const copyUsers = users.map(user => {//glubok copy
+/*const copyUsers = users.map(user => {//glubok copy
     return {...user, friends: [...user.friends]}
-})
+})*/
 //add Bob new friends
-const addFr = users.map(user => user.name === 'Bob' ? {...user, friends: [...user.friends, 'Stepan']} : user)
+/*const addFr = users.map(user => user.name === 'Bob' ? {...user, friends: [...user.friends, 'Stepan']} : user)*/
+
+function mergeArrays(arr1, arr2) {
+    return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+}
+
+mergeArrays([1,2,3,4], [5,6,7,8])
