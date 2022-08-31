@@ -1,4 +1,25 @@
-const  student = {
+type LocalCityType = {
+    title: string
+    countryTitle: string
+}
+type TechnologiesType = {
+    id: number
+    title: string
+}
+type  AddressType = {
+    streetTitle: string
+    city: LocalCityType
+}
+type StudentType = {
+    id: number
+    name: string
+    age: number
+    isActive: boolean
+    address: AddressType
+    technologies: Array<TechnologiesType>
+}
+
+const  student: StudentType = {
     // 'my name': 'Sergey',
     id: 1,
     name: 'Sergey',
