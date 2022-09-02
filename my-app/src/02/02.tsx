@@ -1,16 +1,16 @@
-type LocalCityType = {
+export type LocalCityType = {
     title: string
     countryTitle: string
 }
-type TechnologiesType = {
+export type TechnologiesType = {
     id: number
     title: string
 }
-type  AddressType = {
+export type  AddressType = {
     streetTitle: string
     city: LocalCityType
 }
-type StudentType = {
+export type StudentType = {
     id: number
     name: string
     age: number
@@ -19,7 +19,7 @@ type StudentType = {
     technologies: Array<TechnologiesType>
 }
 
-const  student: StudentType = {
+export const  student: StudentType = {
     // 'my name': 'Sergey',
     id: 1,
     name: 'Sergey',
