@@ -9,23 +9,23 @@ beforeEach(() => {
     let b = 2;
     let c = 3;
 })
-test('sum shuld be correct', () => {
-  /*  //data
+test('sum should be correct', () => {
+  // data
     let a = 1;
     let b = 2;
-    let c = 3;*/
+    let c = 3;
 
     //action
     const result1 = sum(a, b)
-    a = 100;
+    // a = 100;
     const result2 = sum(b, c)
 
-    //expect result
     expect(result1).toBe(3)
-    // expect(result2).toBe(5)
-    expect(result2).toBe(102)
+
+    expect(result2).toBe(5)
+    // expect(result2).toBe(102)
 })
-test('multyplay shuld be correct', () => {
+test('multyplay should be correct', () => {
    /* //data
     let a = 1;
     let b = 2;

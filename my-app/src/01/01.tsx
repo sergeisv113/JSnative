@@ -1,4 +1,4 @@
-console.log(1111)
+// console.log(1111)
 export const value01_01 = '01_01'
 
 export function splitIntoWords(sentense: string) {

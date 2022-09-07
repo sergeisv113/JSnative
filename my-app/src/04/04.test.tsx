@@ -27,9 +27,9 @@ test('should take chipper 160', () => {
 test('get only completed tasks', () => {
     const  tasks = [
         {id: 1, title: 'Bread', isDone: false},
-        {id: 1, title: 'Milk', isDone: true},
-        {id: 1, title: 'Solt', isDone: false},
-        {id: 1, title: 'Sugar', isDone: true},
+        {id: 2, title: 'Milk', isDone: true},
+        {id: 3, title: 'Solt', isDone: false},
+        {id: 4, title: 'Sugar', isDone: true},
     ]
     // const completedTasks  = tasks.filter(tasks => tasks.isDone)
     const completedTasks = tasks.filter(function (task) {
